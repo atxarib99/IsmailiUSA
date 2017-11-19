@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IsmailiUSA</string>
+    <string name="tab1_name">Headlines</string>
+    <string name="tab2_name">Diamond Jubilee</string>
+    <string name="tab3_name">Announcements</string>
+    <string name="tab4_name">More</string>
+</resources>
