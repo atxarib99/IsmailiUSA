@@ -10,7 +10,7 @@
     android:paddingTop="0dp"
     tools:context="com.example.arib.ismailiusatemp.MainActivity">
 
-    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.v4.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -25,60 +25,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_alignParentTop="true"
-                android:layout_above="@android:id/tabs">
-                <LinearLayout
-                    android:id="@+id/tab1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="helloWorld123"/>
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="hello123"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="helloWorld2"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="helloWorld3"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="helloWorld4"/>
-
-                </LinearLayout>
-            </FrameLayout>
+                android:layout_above="@android:id/tabs" />
+            <FrameLayout android:id="@+id/realtabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_above="@android:id/tabs" />
 
         </RelativeLayout>
-    </TabHost>
+    </android.support.v4.app.FragmentTabHost>
 </RelativeLayout>
